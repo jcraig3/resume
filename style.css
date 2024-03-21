@@ -14,6 +14,12 @@ html {
   );
 }
 
+a {
+  color: rgb(31, 36, 193);
+  font-size: 16px;
+  text-decoration: none;
+}
+
 #name {
   font-size: 35px;
 }
