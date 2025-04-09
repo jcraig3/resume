@@ -2,34 +2,184 @@
 
 * {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html {
-  background: linear-gradient(
-    to left,
-    #71e5ff,
-    #628cff 50%,
-    #ffffff 50%,
-    #ffffff 50%
-  );
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #4f76b5, #71e5ff);
+  color: #333;
 }
 
-a {
-  color: rgb(31, 36, 193);
-  font-size: 16px;
-  text-decoration: none;
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  padding: 60px;
+}
+
+#links {
+  padding: 10px;
+  color: #333;
+}
+
+#links a {
+  color: rgb(219, 219, 255);
 }
 
 #name {
   font-size: 35px;
+  font-weight: bold;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 #prof {
-  float: right;
-  margin-top: 10%;
-  margin-right: 10%;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
 }
 
-#aboutText {
-  padding-right: 60%;
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 20px;
+}
+
+.navbar a:hover {
+  background-color: #71e5ff;
+  color: #fff;
+  border-radius: 5px;
+}
+
+section {
+  padding: 60px 0;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.card ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.card ul li {
+  margin: 10px 0;
+}
+
+.card ul li a {
+  text-decoration: none;
+  color: #4f76b5;
+}
+
+.card ul li a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #fff;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #prof {
+    width: 120px;
+    height: 120px;
+  }
+
+  #name {
+    font-size: 30px;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  section {
+    padding: 40px 0;
+  }
+
+  .card {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #name {
+    font-size: 28px;
+  }
+
+  .navbar {
+    font-size: 14px;
+  }
+
+  section {
+    padding: 30px 0;
+  }
+
+  #prof {
+    width: 100px;
+    height: 100px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  #topClick {
+    color: #4f76b5;
+  }
 }
