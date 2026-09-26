@@ -1,260 +1,837 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jayden Craig Resume</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <h2 id="name">Jayden Craig</h2>
-        <div class="profile">
-          <img id="prof" src="./pic.png" alt="Profile Picture" />
-        </div>
-        <div id="links">
-          <a href="./resume.pdf">Resume</a>
-          | <a href="https://www.linkedin.com/in/jayden-craig3/">LinkedIn</a> |
-          <a href="https://github.com/jcraig3/">GitHub</a>
-        </div>
-      </div>
-    </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Jayden Craig is a computer science graduate and technology specialist. Projects, experience, music, and the rest of the story behind the resume."
+        />
+        <meta name="theme-color" content="#eef4fb" />
+        <title>Jayden Craig · Developer & Technology Specialist</title>
+        <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Nunito:wght@600;700&family=Outfit:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <script>
+            document.documentElement.classList.add("js");
+        </script>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <a class="skip" href="#content">Skip to content</a>
 
-    <!-- Navbar -->
-    <div class="navbar">
-      <a href="#about">About</a>
-      <a href="#exp">Experience</a>
-      <a href="#proj">Projects</a>
-      <a href="#activities">Activities</a>
-      <a href="#awards">Awards</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </div>
+        <header class="nav" id="top">
+            <div class="nav-inner">
+                <a class="brand" href="#top">Jayden Craig</a>
 
-    <div class="container">
-      <div class="card">
-        <section id="about">
-          <h3>About</h3>
-          <p>
-            Hi, I am Jayden Craig! I am a graduate of Loyola Marymount
-            University with a Bachelor of Science in Computer Science. My
-            background spans various areas of technology, from web development
-            to IT support, quality assurance, and data analysis.
-            <br /><br />
-            In web development, I've worked on projects like MetroTune, a
-            music-themed web app built with HTML, CSS, JavaScript, and Figma, as
-            well as API integrations like Pokemon-API. I focus on creating
-            seamless user experiences by combining technical expertise with
-            thoughtful design.
-            <br /><br />
-            In IT, I have hands-on experience providing technical support,
-            troubleshooting issues, and assisting users in dynamic environments.
-            I’ve developed the ability to quickly solve problems, maintain
-            systems, and communicate effectively to support team members and
-            clients.
-            <br /><br />
-            My quality assurance experience includes testing software for
-            reliability and usability. I’ve written test cases, identified bugs,
-            and helped ensure smooth development cycles by maintaining
-            high-quality standards.
-            <br /><br />
-            With data analysis, I’ve utilized tools like Python and R to conduct
-            statistical analysis and visualizations. I’ve worked on projects
-            that explore probability distributions and random variables, which
-            enhanced my ability to extract insights and present findings
-            clearly.
-            <br /><br />
-            Outside of tech, I enjoy restoring my 1969 El Camino, audio
-            engineering, and staying active through fitness and the outdoors. My
-            diverse skill set allows me to bring a well-rounded,
-            solutions-driven approach to every project I work on.
-            <br /><br />
-            Enthusiastic, communicative, and goal-oriented, I bring a diverse
-            skill set to any role.
-          </p>
-        </section>
-      </div>
+                <nav class="nav-links" id="nav-menu" aria-label="Primary">
+                    <a href="#about">About</a>
+                    <a href="#skills">Toolkit</a>
+                    <a href="#work">Work</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#beyond">Beyond</a>
+                    <a href="#contact">Contact</a>
+                </nav>
 
-      <section id="exp">
-        <div class="card">
-          <h3>Experience</h3>
-          <ul>
-            <li>Alleviate Tax - Technology Specialist</li>
-            <li>Aicade - AI Game Creator</li>
-            <li>H2GO - Guest Support Ambassador</li>
-            <li>Melrose Sound Studios - Audio Engineer</li>
-            <li>Loyola Marymount Recording Arts Office - Assistant Engineer</li>
-            <li>Private Island Audio - Studio Apprentice</li>
-          </ul>
-        </div>
-      </section>
+                <div class="nav-actions">
+                    <a class="nav-resume" href="resume.pdf" target="_blank" rel="noopener">
+                        Resume
+                    </a>
+                    <button
+                        class="nav-toggle"
+                        type="button"
+                        aria-expanded="false"
+                        aria-controls="nav-menu"
+                    >
+                        <span class="sr-only">Menu</span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </header>
 
-      <section id="proj">
-        <div class="card">
-          <h3>Projects</h3>
-          <ul>
-            <h5>Web Development</h5>
-            <li>
-              <a href="https://jcraig3.github.io/metrotune/code/home.html"
-                >MetroTune</a
-              >
-            </li>
-            <li>
-              <a href="https://jcraig3.github.io/Pokemon-Api/">Pokemon-Api</a>
-            </li>
-            <li>
-              <a href="https://github.com/jcraig3/jcraig3.lyricgetter.github.io"
-                >Lyric Getter</a
-              >
-            </li>
-            <li>
-              <a href="https://jcraig3.github.io/RPM_Calc/">RPM Calculator</a>
-            </li>
-            <li>
-              <a href="https://jcraig3.github.io/Compound-Interest-Calculator/"
-                >Interest Calculator</a
-              >
-            </li>
-            <li>
-              <a href="https://play.aicade.io/rlui1GTMT8GGnlvc/"
-                >Muscle Car Mania</a
-              >
-            </li>
-            <li>
-              <a href="./UI/ecommerce_site_sample.png"
-                >Sample E-Commerce Site Designed in Figma</a
-              >
-            </li>
+        <main id="content">
+            <section class="hero">
+                <div class="wrap hero-grid">
+                    <div class="hero-copy">
+                        <p class="kicker">Computer science · Southern California</p>
+                        <h1>Hi, my name is Jayden</h1>
+                        <p class="lede">
+                            The resume is the short version. This page covers the
+                            products I've shipped, smaller projects, and what I
+                            do outside of work.
+                        </p>
+                        <div class="hero-actions">
+                            <a class="btn btn-primary" href="#work">
+                                See the work
+                                <span aria-hidden="true">↓</span>
+                            </a>
+                            <a
+                                class="btn btn-ghost"
+                                href="resume.pdf"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                Open the resume
+                                <span aria-hidden="true">↗</span>
+                            </a>
+                        </div>
+                        <ul class="hero-links">
+                            <li>
+                                <a href="https://github.com/jcraig3/" target="_blank" rel="noopener"
+                                    >GitHub</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.linkedin.com/in/jayden-craig3/"
+                                    target="_blank"
+                                    rel="noopener"
+                                    >LinkedIn</a
+                                >
+                            </li>
+                            <li>
+                                <a href="mailto:jayden.t.craig@gmail.com">Email</a>
+                            </li>
+                        </ul>
+                    </div>
 
-            <h5>GitHub Repos</h5>
-            <li><a href="https://github.com/cplant27/TOAL">TOAL</a></li>
-            <li>
-              <a href="https://github.com/lmu-cmsi/dream-design-tuner/tree/main"
-                >Dream Design Tuner</a
-              >
-            </li>
+                    <figure class="portrait">
+                        <img
+                            src="pic.jpg"
+                            width="408"
+                            height="408"
+                            alt="Jayden Craig, smiling in a suit"
+                        />
+                        <figcaption>
+                            <span class="dot" aria-hidden="true"></span>
+                            Now at Alleviate Tax
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
 
-            <h5>Data Analytics</h5>
-            <li>
-              <a href="./Data/drvLab1.html">Discrete Random Variable Lab</a>
-            </li>
-            <li><a href="./Data/rvlab2.html">Random Variable Lab</a></li>
+            <section class="section" id="about">
+                <div class="wrap about-grid">
+                    <div class="reveal">
+                        <p class="label">About</p>
+                        <h2>I like building things and seeing them through.</h2>
+                        <div class="prose">
+                            <p>
+                                I studied computer science at Loyola Marymount and
+                                graduated in 2024. I enjoy writing code, along
+                                with the work around it: interfaces, hosting,
+                                networks, payments, and helping the people who
+                                use what I build.
+                            </p>
+                            <p>
+                                I'm a Technology Specialist at Alleviate Tax in
+                                Irvine. The role covers full-stack features,
+                                infrastructure such as DNS and VLANs, and Python
+                                automation for routine work.
+                            </p>
+                            <p>
+                                Outside of that I restore a 1969 El Camino, record
+                                music, and have spent years in community service.
+                            </p>
+                        </div>
+                    </div>
 
-            <h5>Music</h5>
-            <li>
-              <figure>
-                <figcaption>Wander</figcaption>
-                <audio controls src="./Music/Wander.mp3"></audio>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <figcaption>Up Next</figcaption>
-                <audio controls src="./Music/Up Next (M1).mp3"></audio>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <figcaption>Rosewood</figcaption>
-                <audio controls src="./Music/Rosewood (M2).mp3"></audio>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <figcaption>Guitar on cover of "Tennessee Whiskey":</figcaption>
-                <audio controls src="./Music/Whiskey Tennessee .wav"></audio>
-              </figure>
-            </li>
-            <h7>Credits</h7>
-            <li>Empire / Ant Clemons / Kevin Ross</li>
-            <li>Crown Valley</li>
-            <li>Marina Vista</li>
-            <li>Kinflo</li>
-            <li>Trezza</li>
-          </ul>
-        </div>
-      </section>
+                    <aside class="facts reveal" style="--delay: 90ms">
+                        <div class="fact">
+                            <span>Education</span>
+                            <strong>B.S. Computer Science</strong>
+                            <small>Loyola Marymount University · Los Angeles</small>
+                            <small>August 2020 — May 2024</small>
+                        </div>
+                        <div class="fact">
+                            <span>Now</span>
+                            <strong>Technology Specialist</strong>
+                            <small>Alleviate Tax · Irvine, California</small>
+                            <small>May 2025 — Present</small>
+                        </div>
+                        <div class="fact">
+                            <span>Coursework</span>
+                            <div class="chips">
+                                <span>Data Structures</span>
+                                <span>Algorithms</span>
+                                <span>Web Applications</span>
+                                <span>Operating Systems</span>
+                                <span>Artificial Intelligence</span>
+                                <span>Cybersecurity</span>
+                                <span>Languages & Automata</span>
+                                <span>Interaction Design</span>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </section>
 
-      <!-- Activities Section -->
-      <section id="activities">
-        <div class="card">
-          <h3>Activities</h3>
-          <ul>
-            <li>Member of National Society of Collegiate Scholars</li>
-            <li>Member of LMU Auto Club</li>
-            <li>Restoration of 1969 El Camino</li>
-            <li>ALS Association - Co-Founder of Team Can’t Stop, Won’t Stop</li>
-            <li>Cal Poly San Luis Obispo EPIC Summer Program</li>
-            <li>Study of guitar, drums, and general music theory</li>
-            <li>Holy Trinity Catholic Church Servant Leader</li>
-            <li>National Honor Society</li>
-            <li>UCLA Game Lab Summer Institute</li>
-            <li>Lion’s Heart Service Organization</li>
-          </ul>
-        </div>
-      </section>
+            <section class="section" id="skills">
+                <div class="wrap">
+                    <div class="section-head reveal">
+                        <div>
+                            <p class="label">Toolkit</p>
+                            <h2>Tools and technologies.</h2>
+                        </div>
+                    </div>
+                    <div class="skill-grid">
+                        <article class="skill reveal">
+                            <h3>Languages</h3>
+                            <p>
+                                JavaScript, TypeScript, Python, Java, PHP, SQL,
+                                C#, Swift, HTML, CSS, R, PowerShell
+                            </p>
+                        </article>
+                        <article class="skill reveal" style="--delay: 60ms">
+                            <h3>Frameworks</h3>
+                            <p>
+                                React, Remix, Node.js, Web Audio API, Pandas,
+                                dplyr, ggplot2
+                            </p>
+                        </article>
+                        <article class="skill reveal" style="--delay: 120ms">
+                            <h3>Cloud & networks</h3>
+                            <p>
+                                AWS, DigitalOcean, Cloudflare, Git, DNS, SSL/TLS,
+                                VLANs, IP configuration
+                            </p>
+                        </article>
+                        <article class="skill reveal">
+                            <h3>Web & APIs</h3>
+                            <p>
+                                WordPress, Stripe, REST, GraphQL, AJAX, API
+                                integration, AI-assisted development
+                            </p>
+                        </article>
+                        <article class="skill reveal" style="--delay: 60ms">
+                            <h3>Data</h3>
+                            <p>Visualization, statistical analysis, Pandas, R</p>
+                        </article>
+                        <article class="skill reveal" style="--delay: 120ms">
+                            <h3>Design</h3>
+                            <p>
+                                Figma, UI and UX, wireframes, responsive layout,
+                                interaction design
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
 
-      <!-- Awards Section -->
-      <section id="awards">
-        <div class="card">
-          <h3>Awards</h3>
-          <ul>
-            <li>National Society of Collegiate Scholars - LMU Chapter</li>
-            <li>Xavier Scholarship Recipient</li>
-            <li>LMU Arrupe Scholarship Recipient</li>
-            <li>President’s Volunteer Service Award</li>
-            <li>Lion’s Heart Torchbearer Award</li>
-          </ul>
-        </div>
-      </section>
+            <section class="section section-tint" id="work">
+                <div class="wrap">
+                    <div class="section-head reveal">
+                        <div>
+                            <p class="label">Work</p>
+                            <h2>Selected projects.</h2>
+                            <p class="sub">
+                                Live products and apps first, then smaller tools,
+                                coursework, and design work.
+                            </p>
+                        </div>
+                        <a
+                            class="text-link"
+                            href="https://github.com/jcraig3/"
+                            target="_blank"
+                            rel="noopener"
+                            >GitHub profile ↗</a
+                        >
+                    </div>
 
-      <section id="skills">
-        <div class="card">
-          <h3>Skills</h3>
-          <ul>
-            <li>Java</li>
-            <li>Javascript</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>SASS</li>
-            <li>React</li>
-            <li>Python</li>
-            <li>Pandas</li>
-            <li>C#</li>
-            <li>Figma</li>
-            <li>Interaction Design</li>
-            <li>Web Development</li>
-            <li>Wireframing</li>
-            <li>Front-end Programming</li>
-            <li>Agile and Waterfall Development</li>
-            <li>Logic Pro</li>
-            <li>Pro Tools</li>
-            <li>Audio Engineering</li>
-            <li>Recording</li>
-            <li>Mixing</li>
-          </ul>
-        </div>
-      </section>
+                    <div class="filters reveal" role="group" aria-label="Filter projects">
+                        <button class="filter" type="button" data-filter="all" aria-pressed="true">
+                            All
+                        </button>
+                        <button class="filter" type="button" data-filter="shipped" aria-pressed="false">
+                            Shipped
+                        </button>
+                        <button class="filter" type="button" data-filter="web" aria-pressed="false">
+                            Web
+                        </button>
+                        <button class="filter" type="button" data-filter="ios" aria-pressed="false">
+                            iOS
+                        </button>
+                        <button class="filter" type="button" data-filter="side" aria-pressed="false">
+                            Side projects
+                        </button>
+                    </div>
 
-      <!-- Contact Section -->
-      <section id="contact">
-        <div class="card">
-          <h3>Contact Me</h3>
-          <p>
-            Email:
-            <a href="mailto:jayden.t.craig@gmail.com"
-              >jayden.t.craig@gmail.com</a
-            >
-          </p>
-        </div>
-      </section>
-    </div>
+                    <div class="feature-grid">
+                        <a
+                            class="work-card reveal"
+                            data-tags="shipped web"
+                            href="https://estatehelper.com/"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <span class="card-kicker">Full-stack product</span>
+                            <h3>Estate Helper</h3>
+                            <p>
+                                An estate planning platform that guides people
+                                through creating their documents. I worked on the
+                                frontend, backend, authentication, Stripe
+                                payments, document generation, admin tools, and
+                                deployment.
+                            </p>
+                            <div class="tags">
+                                <span>JavaScript</span>
+                                <span>PHP</span>
+                                <span>WordPress</span>
+                                <span>Stripe</span>
+                                <span>AWS</span>
+                            </div>
+                            <span class="card-go">Visit estatehelper.com <span>↗</span></span>
+                        </a>
 
-    <footer>
-      <p><a id="topClick" href="#top">to top</a></p>
-      <br />
-      <p>© 2025 Jayden Craig</p>
-    </footer>
-  </body>
+                        <article
+                            class="work-card reveal"
+                            style="--delay: 80ms"
+                            data-tags="shipped web"
+                        >
+                            <span class="card-kicker">SaaS</span>
+                            <h3>EZLinkd</h3>
+                            <p>
+                                A product for customizable digital business cards
+                                and online profiles. I built the application and
+                                the production setup: hosting, domains, DNS, SSL,
+                                and Cloudflare. My own page is on it. 5% of all
+                                subscription purchases supports ALS Network.
+                            </p>
+                            <div class="tags">
+                                <span>JavaScript</span>
+                                <span>PHP</span>
+                                <span>AWS</span>
+                                <span>Cloudflare</span>
+                            </div>
+                            <div class="card-links">
+                                <a
+                                    class="card-go"
+                                    href="https://ezlinkd.com/"
+                                    target="_blank"
+                                    rel="noopener"
+                                    >Visit ezlinkd.com <span>↗</span></a
+                                >
+                                <a
+                                    class="card-go"
+                                    href="https://ezlinkd.com/jcraig3"
+                                    target="_blank"
+                                    rel="noopener"
+                                    >My page <span>↗</span></a
+                                >
+                            </div>
+                        </article>
+
+                        <a
+                            class="work-card reveal"
+                            data-tags="shipped ios"
+                            href="https://apps.apple.com/no/app/10pins/id6759989721"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <span class="card-kicker">iOS · App Store</span>
+                            <h3>10Pins</h3>
+                            <p>
+                                An iOS bowling app for scorekeeping, game
+                                tracking, player statistics, and handicaps.
+                            </p>
+                            <div class="tags">
+                                <span>Swift</span>
+                                <span>iOS</span>
+                                <span>Statistics</span>
+                            </div>
+                            <span class="card-go">App Store <span>↗</span></span>
+                        </a>
+
+                        <a
+                            class="work-card reveal"
+                            style="--delay: 80ms"
+                            data-tags="shipped ios"
+                            href="https://apps.apple.com/us/app/beergenie-drink-counter/id6756202128"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <span class="card-kicker">iOS · App Store</span>
+                            <h3>BeerGenie</h3>
+                            <p>
+                                An iOS app for tracking drinks and habits, with
+                                personal limits, history, charts, notifications,
+                                and social features.
+                            </p>
+                            <div class="tags">
+                                <span>Swift</span>
+                                <span>iOS</span>
+                                <span>Analytics</span>
+                            </div>
+                            <span class="card-go">App Store <span>↗</span></span>
+                        </a>
+
+                        <a
+                            class="work-card reveal"
+                            data-tags="shipped web"
+                            href="https://jcraig3.github.io/metrotune/code/home.html"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <span class="card-kicker">Web app · Senior project</span>
+                            <h3>MetroTune</h3>
+                            <p>
+                                My senior project at LMU: a metronome and guitar
+                                tuner. I designed the interface in Figma and
+                                built it with the Web Audio API.
+                            </p>
+                            <div class="tags">
+                                <span>JavaScript</span>
+                                <span>Web Audio API</span>
+                                <span>Figma</span>
+                            </div>
+                            <span class="card-go">View project <span>↗</span></span>
+                        </a>
+
+                        <a
+                            class="work-card reveal"
+                            style="--delay: 80ms"
+                            data-tags="shipped web"
+                            href="https://jcraig3.github.io/RPM_Calc/"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <span class="card-kicker">Web tool</span>
+                            <h3>RPM Calculator</h3>
+                            <p>
+                                A calculator for automotive RPM and gearing.
+                            </p>
+                            <div class="tags">
+                                <span>JavaScript</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                            </div>
+                            <span class="card-go">View project <span>↗</span></span>
+                        </a>
+                    </div>
+
+                    <div class="more-head reveal">
+                        <h3>Other projects</h3>
+                        <p>Smaller tools, coursework, and design.</p>
+                    </div>
+
+                    <div class="work-list">
+                        <a
+                            class="work-row reveal"
+                            data-tags="web side"
+                            href="https://jcraig3.github.io/Compound-Interest-Calculator/"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <span class="row-name">Interest Calculator</span>
+                            <span class="row-desc"
+                                >A compound interest calculator for the
+                                browser.</span
+                            >
+                            <span class="row-meta">HTML · CSS · JS</span>
+                            <span class="row-go">View</span>
+                        </a>
+                        <a
+                            class="work-row reveal"
+                            data-tags="web side"
+                            href="https://jcraig3.github.io/Pokemon-Api/"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <span class="row-name">Pokémon API</span>
+                            <span class="row-desc"
+                                >A web app that loads and displays data from the
+                                Pokémon API.</span
+                            >
+                            <span class="row-meta">JavaScript · REST</span>
+                            <span class="row-go">View</span>
+                        </a>
+                        <a
+                            class="work-row reveal"
+                            data-tags="web side"
+                            href="https://github.com/jcraig3/jcraig3.lyricgetter.github.io"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <span class="row-name">Lyric Getter</span>
+                            <span class="row-desc"
+                                >A music search page that retrieves content from
+                                an external API.</span
+                            >
+                            <span class="row-meta">JavaScript · APIs</span>
+                            <span class="row-go">GitHub</span>
+                        </a>
+                        <a
+                            class="work-row reveal"
+                            data-tags="side"
+                            href="Data/drvLab1.html"
+                        >
+                            <span class="row-name">Random Variables, Lab 1</span>
+                            <span class="row-desc"
+                                >A statistics lab on discrete random variables,
+                                distributions, and plots.</span
+                            >
+                            <span class="row-meta">R · Statistics</span>
+                            <span class="row-go">Read</span>
+                        </a>
+                        <a
+                            class="work-row reveal"
+                            data-tags="side"
+                            href="Data/rvlab2.html"
+                        >
+                            <span class="row-name">Random Variables, Lab 2</span>
+                            <span class="row-desc"
+                                >A second statistics lab on random variables and
+                                data visualization.</span
+                            >
+                            <span class="row-meta">R · Statistics</span>
+                            <span class="row-go">Read</span>
+                        </a>
+                        <a
+                            class="work-row reveal"
+                            data-tags="side"
+                            href="UI/ecommerce_site_sample.png"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <span class="row-name">Camera shop UI</span>
+                            <span class="row-desc"
+                                >An e-commerce interface designed in Figma,
+                                including the product page, reviews, and
+                                shipping.</span
+                            >
+                            <span class="row-meta">Figma · UI</span>
+                            <span class="row-go">View</span>
+                        </a>
+                        <a
+                            class="work-row reveal"
+                            data-tags="side"
+                            href="https://github.com/cplant27/TOAL"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <span class="row-name">TOAL</span>
+                            <span class="row-desc"
+                                >Coursework on programming languages and
+                                automata.</span
+                            >
+                            <span class="row-meta">GitHub</span>
+                            <span class="row-go">Repo</span>
+                        </a>
+                    </div>
+                    <p class="filter-empty" hidden>No projects in this filter.</p>
+                </div>
+            </section>
+
+            <section class="section" id="experience">
+                <div class="wrap">
+                    <div class="section-head reveal">
+                        <div>
+                            <p class="label">Experience</p>
+                            <h2>Roles and what the work involved.</h2>
+                        </div>
+                    </div>
+
+                    <ol class="timeline">
+                        <li class="job reveal">
+                            <div class="job-when">
+                                <span>May 2025 — Present</span>
+                                <span>Irvine, CA</span>
+                            </div>
+                            <div class="job-body">
+                                <p class="job-org">Alleviate Tax</p>
+                                <h3>Technology Specialist</h3>
+                                <p>
+                                    I build tools people inside and outside the
+                                    company use, and I keep the systems behind
+                                    them running.
+                                </p>
+                                <div class="job-cols">
+                                    <div>
+                                        <h4>Building</h4>
+                                        <ul>
+                                            <li>
+                                                Full-stack web apps across the
+                                                frontend, backend, WordPress, UI,
+                                                and payments.
+                                            </li>
+                                            <li>
+                                                Internal and external tools that
+                                                tie APIs and third-party services
+                                                into the business.
+                                            </li>
+                                            <li>
+                                                Python automation for onboarding,
+                                                admin setup, DNC submissions, and
+                                                incident notes.
+                                            </li>
+                                            <li>
+                                                Documentation and training materials
+                                                for onboarding and IT processes.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4>Infrastructure & support</h4>
+                                        <ul>
+                                            <li>
+                                                AWS, DigitalOcean, Cloudflare,
+                                                domains, DNS, SSL, and deploys.
+                                            </li>
+                                            <li>
+                                                VLANs, permissions, IP
+                                                restrictions, and device
+                                                connectivity.
+                                            </li>
+                                            <li>
+                                                Helpdesk tickets, email, and
+                                                calls for the organization.
+                                            </li>
+                                            <li>
+                                                Machine setups, hardware,
+                                                office moves, and cable
+                                                management.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="job reveal">
+                            <div class="job-when">
+                                <span>Jan 2025 — Mar 2025</span>
+                                <span>Remote</span>
+                            </div>
+                            <div class="job-body">
+                                <p class="job-org">Aicade</p>
+                                <h3>AI Game Creator</h3>
+                                <p>
+                                    A short contract in AI-assisted game
+                                    development. I used JavaScript and
+                                    prompt-driven workflows to build playable
+                                    games.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="job reveal">
+                            <div class="job-when">
+                                <span>May 2024 — Mar 2025</span>
+                                <span>Los Angeles, CA</span>
+                            </div>
+                            <div class="job-body">
+                                <p class="job-org">Melrose Sound Studio</p>
+                                <h3>Audio Engineer</h3>
+                                <p>
+                                    Recorded, edited, and mixed sessions in a
+                                    professional studio, through the end of
+                                    college and the following year.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="job reveal">
+                            <div class="job-when">
+                                <span>Earlier</span>
+                                <span>California</span>
+                            </div>
+                            <div class="job-body">
+                                <p class="job-org">Earlier experience</p>
+                                <h3>Studios and support</h3>
+                                <ul class="earlier">
+                                    <li>LMU Recording Arts Office — Assistant Engineer</li>
+                                    <li>Private Island Audio — Studio Apprentice</li>
+                                    <li>H2GO — Guest Support Ambassador</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+
+            <section class="section section-tint" id="beyond">
+                <div class="wrap">
+                    <div class="section-head reveal">
+                        <div>
+                            <p class="label">Beyond the resume</p>
+                            <h2>Life outside of work.</h2>
+                            <p class="sub">
+                                Cars, music, community service, and a few
+                                programs that shaped how I learn.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="life-grid">
+                        <article class="life life-car reveal">
+                            <p class="life-kicker">Automotive</p>
+                            <p class="life-year">1969</p>
+                            <h3>El Camino</h3>
+                            <p>
+                                A long-running restoration of my 1969 El
+                                Camino. I've done the bodywork, electrical work,
+                                and a sound system built for the car, plus a full
+                                powertrain conversion from a 2-speed Powerglide
+                                to a 350 small-block, a 700R4 transmission, and
+                                3.73 posi rear gears.
+                            </p>
+                        </article>
+
+                        <article class="life life-music reveal" style="--delay: 80ms">
+                            <p class="life-kicker">Music</p>
+                            <h3>Recording, mixing, and playing</h3>
+                            <p>
+                                I play guitar and drums, and I have worked in
+                                studios at Melrose Sound and LMU's recording
+                                arts office. A few of my recordings:
+                            </p>
+                            <ul class="tracks">
+                                <li>
+                                    <span>Wander</span>
+                                    <audio controls preload="none" src="Music/Wander.mp3"></audio>
+                                </li>
+                                <li>
+                                    <span>Up Next</span>
+                                    <audio
+                                        controls
+                                        preload="none"
+                                        src="Music/Up%20Next%20(M1).mp3"
+                                    ></audio>
+                                </li>
+                                <li>
+                                    <span>Rosewood</span>
+                                    <audio
+                                        controls
+                                        preload="none"
+                                        src="Music/Rosewood%20(M2).mp3"
+                                    ></audio>
+                                </li>
+                            </ul>
+                            <p class="fine">
+                                Also recorded:
+                                <a href="Music/Whiskey%20Tennessee%20.wav" download
+                                    >Whiskey Tennessee</a
+                                >
+                                (WAV download).
+                            </p>
+                        </article>
+
+                        <article class="life reveal">
+                            <p class="life-kicker">Community</p>
+                            <h3>Community service</h3>
+                            <p>
+                                I volunteered with the ALS Association and Lion's
+                                Heart through high school and college, and
+                                co-founded Team Can't Stop, Won't Stop, an ALS
+                                fundraiser.
+                            </p>
+                        </article>
+
+                        <article class="life reveal" style="--delay: 80ms">
+                            <p class="life-kicker">Learning</p>
+                            <h3>Summer programs</h3>
+                            <p>
+                                UCLA Game Lab Summer Institute and Cal Poly San
+                                Luis Obispo's EPIC program. Plenty of my projects
+                                start with something I have not done before.
+                            </p>
+                        </article>
+                    </div>
+
+                    <div class="recognition reveal">
+                        <div>
+                            <h3>Activities</h3>
+                            <ul>
+                                <li>National Society of Collegiate Scholars, LMU chapter</li>
+                                <li>LMU Auto Club</li>
+                                <li>Holy Trinity Catholic Church</li>
+                                <li>Ongoing study of guitar, drums, and music theory</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Awards</h3>
+                            <ul class="awards">
+                                <li>
+                                    <span>2022 — 2024</span>
+                                    National Society of Collegiate Scholars
+                                </li>
+                                <li>
+                                    <span>2020 — 2024</span>
+                                    Xavier Scholarship
+                                </li>
+                                <li>
+                                    <span>2020 — 2024</span>
+                                    LMU Arrupe Scholarship
+                                </li>
+                                <li>
+                                    <span>Service</span>
+                                    President's Volunteer Service Award
+                                </li>
+                                <li>
+                                    <span>Service</span>
+                                    Lion's Heart Torchbearer Award
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact" id="contact">
+                <div class="wrap contact-inner reveal">
+                    <img
+                        src="pic1.png"
+                        width="333"
+                        height="320"
+                        alt="Jayden Craig seated, wearing a black suit"
+                    />
+                    <div>
+                        <p class="label label-light">Contact</p>
+                        <h2>Get in touch.</h2>
+                        <p>
+                            Email is the best way to reach me, whether it is
+                            about a project, engineering, music, or cars.
+                        </p>
+                        <a class="btn btn-light" href="mailto:jayden.t.craig@gmail.com">
+                            jayden.t.craig@gmail.com
+                        </a>
+                        <ul class="contact-links">
+                            <li><a href="tel:+19494299173">(949) 429-9173</a></li>
+                            <li>
+                                <a href="https://github.com/jcraig3/" target="_blank" rel="noopener"
+                                    >GitHub</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.linkedin.com/in/jayden-craig3/"
+                                    target="_blank"
+                                    rel="noopener"
+                                    >LinkedIn</a
+                                >
+                            </li>
+                            <li>
+                                <a href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="wrap footer-inner">
+                <p>Jayden Craig · Developer & technology specialist</p>
+                <a href="#top">Back to top</a>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
 </html>
